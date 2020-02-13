@@ -12,6 +12,7 @@ public class Produit {
     private LocalTime heureDebut;
     private LocalDate dateFin;
     private LocalTime heureFin;
+    private boolean enVente=false;
     private int pasEnchere;
     private int coutParticipation;
 
@@ -30,11 +31,13 @@ public class Produit {
     public void demarrerEnchere () {
         this.dateDebut = LocalDate.now();
         this.heureDebut = LocalTime.now();
+        this.enVente=true;
     }
 
     public void arreterEnchere () {
         this.dateFin = LocalDate.now();
         this.heureFin = LocalTime.now();
+        this.enVente=false;
     }
 
     @Override
