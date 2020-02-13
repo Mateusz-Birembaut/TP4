@@ -7,16 +7,14 @@ public class OffreEnchere {
 
     private LocalDate dateOffre;
     private LocalTime heureOffre;
-    private double prixEnCour;
+    private double prixPropose;
     private double prixMax;
 
 
-    public OffreEnchere(double prixEnCour, double prixMax) {
-        this.prixEnCour = prixEnCour;
+    public OffreEnchere(double prixPropose, double prixMax) {
+        this.prixPropose = prixPropose;
         this.prixMax = prixMax;
     }
-
-
 
 
     @Override
@@ -24,13 +22,13 @@ public class OffreEnchere {
         return "OffreEnchere{" +
                 "dateOffre=" + dateOffre +
                 ", heureOffre=" + heureOffre +
-                ", prixEnCour=" + prixEnCour +
+                ", prixEnCour=" + prixPropose +
                 ", prixMax=" + prixMax +
                 '}';
     }
 
-    public double getPrixEnCour() {
-        return prixEnCour;
+    public double getPrixPropose() {
+        return prixPropose;
     }
 
     public double getPrixMax() {
@@ -38,7 +36,7 @@ public class OffreEnchere {
     }
 
     public void setPrixEnCour(double prixEnCour) {
-        this.prixEnCour = prixEnCour;
+        this.prixPropose = prixEnCour;
     }
 
 
