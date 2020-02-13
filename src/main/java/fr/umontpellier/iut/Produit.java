@@ -40,6 +40,7 @@ public class Produit {
         this.enVente=false;
     }
 
+
     @Override
     public String toString() {
         return "Produit{" +
@@ -50,9 +51,9 @@ public class Produit {
                 ", heureDebut=" + heureDebut +
                 ", dateFin=" + dateFin +
                 ", heureFin=" + heureFin +
+                ", enVente=" + enVente +
                 ", pasEnchere=" + pasEnchere +
                 ", coutParticipation=" + coutParticipation +
                 '}';
     }
-
 }
